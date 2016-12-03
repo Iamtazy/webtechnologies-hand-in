@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+header, footer {
+    
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+ul {
+	 display: flex;
+  	justify-content: center;
+	width:100%;
+	margin: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    color: black;
+}
+
+#content {
+	background-color: grey;
+	color: white;
+}
