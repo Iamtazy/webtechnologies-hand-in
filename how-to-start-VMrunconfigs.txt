@@ -1,0 +1,5 @@
+ -Ddatabase.host=localhost -Ddatabase.port=3306 -Ddatabase.user=lily -Ddatabase.password=lily -Ddatabase.db=librarian -Dmybatis.config=
+
+
+
+mysql scripts in persist-mysql/resources -> run those with the root user in workbench
