@@ -15,6 +15,12 @@ public class IndexController {
 		ModelAndView result = new ModelAndView("index");
 		return result;
 	}
+	
+	@RequestMapping(value={"/authorPage"})
+	public ModelAndView authorPage(){
+		ModelAndView result = new ModelAndView("authors");
+		return result;
+	}
 
 	@RequestMapping("/hello")
 	public @ResponseBody String sayHello(){

@@ -61,6 +61,11 @@ li a:hover {
 #content {
 	background-color: grey;
 	height: 78%;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	text-align: justify;
 }
 
 #mainContent {
@@ -99,5 +104,12 @@ li.leftLI a {
 li.leftLI a:hover {
     background-color: #37EE2A;
     color: black;
+}
+
+table, th, td {
+	width: 50%;
+	vertical-align: middle;
+	border: 1px solid;
+	color: white;
 }
 
