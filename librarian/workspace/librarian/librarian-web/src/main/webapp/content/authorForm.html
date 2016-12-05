@@ -1,0 +1,30 @@
+<form action="javascript:submitInsert()">
+ID: <input id="id" type="number" name="id"/><br>
+Name: <input id="name" type="text" name="name"/><br>
+Nationality: <select id="nationality" name="nationality">
+	<option value="Hungarian">Hungarian</option>
+	<option value="British">British</option>
+	<option value="American">American</option>
+	<option value="Spanish">Spanish</option>
+	<option value="Russian">Russian</option>
+</select><br>
+Birth Date: <input id="bdate" type="date" name="bdate"/><br>
+<input type="submit" value="Submit"/>
+</form>
+<script>
+function submitInsert() {
+	var JSONObject = {"authorID":$("#id").val(), "name":$("#name").val(), "nationality":$("#nationality").val(), "birthDate":$("#bdate").val()};   
+	$.ajax({
+	  url: "author/insert",
+	  type: "POST",
+	  data: JSON.stringify(JSONObject),
+	  contentType:'application/json'
+	})  .done(function() {
+	    alert( "Insert was successful!" );
+	    window.location="authorPage";
+	  })
+	  .fail(function() {
+	    alert( "An error has occured! Please check the fields again!" );
+	  }); 
+}
+</script>

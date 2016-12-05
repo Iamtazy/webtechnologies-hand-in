@@ -24,14 +24,7 @@ $(document).ready(function() {
 	});
 	
 	$("#btn2").click(function() {
-		var JSONObject= {"authorID":1, "name":"random try", "nationality":"Hungarian", "birthDate":"1994-08-04"};   
-
-		$.ajax({
-		  url: "author/insert",
-		  type: "POST",
-		  data: JSON.stringify(JSONObject),
-		  contentType:'application/json'
-		}); 
+		$("#mainContent").load("content/authorForm.html");
 	});
 });
 </script>
@@ -45,7 +38,6 @@ $(document).ready(function() {
   <li><a href="index">Home</a></li>
   <li><a href="authorPage">Authors</a></li>
   <li><a href="bookPage">Books</a></li>
-  <li><a href="about.asp">Something</a></li>
 </ul></nav>
 <div id="content">
 <div id="leftPanel">
@@ -53,7 +45,6 @@ $(document).ready(function() {
   <li id="btn1" class="leftLI"><a href="#">List all authors</a></li>
   <li id="btn2" class="leftLI"><a href="#">Insert an author</a></li>
   <li id="btn3" class="leftLI"><a href="#">Update an author</a></li>
-  <li id="btn4" class="leftLI"><a href="#">Something</a></li>
 </ul></nav></div>
 <div id="mainContent"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper urna id sem ornare, vel lobortis diam interdum. Vestibulum sed felis pulvinar, pretium lorem at, auctor ex. Proin varius diam at suscipit egestas. Vestibulum a aliquam erat. Maecenas quis tortor vel dolor venenatis blandit at nec dolor. Vivamus sit amet ante nec diam fringilla sagittis. Morbi condimentum euismod quam quis porttitor. Nam erat elit, semper a nibh venenatis, tempor volutpat magna.
 Nullam commodo, neque at faucibus auctor, nibh lorem convallis nulla, et dignissim tellus orci eget purus. Cras in semper libero. Curabitur dapibus leo sed ex dignissim sodales. Nulla ac ultricies sapien. Fusce eu malesuada massa, id semper enim. Phasellus faucibus pharetra porta. Donec mattis imperdiet consequat. Morbi sodales feugiat diam, condimentum feugiat justo viverra et. Quisque dictum dignissim scelerisque. Nulla faucibus pretium nibh sed mattis. Morbi eu ullamcorper lacus. Nunc eu odio quis dui tristique faucibus.

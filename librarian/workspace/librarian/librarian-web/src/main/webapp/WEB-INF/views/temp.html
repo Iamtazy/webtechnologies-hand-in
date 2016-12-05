@@ -42,3 +42,22 @@ Sed ac nisl id risus porta hendrerit sed non ante. Phasellus efficitur lacus at 
 
 </body>
 </html>
+
+
+
+
+
+
+
+$(document).ready(function(){
+	$("form").submit(function(){
+		var JSONObject= {"authorID":$("#id"), "name":$("#name"), "nationality":$("#nationality"), "birthDate":$("#bdate")};   
+
+		$.ajax({
+		  url: "author/insert",
+		  type: "POST",
+		  data: JSON.stringify(JSONObject),
+		  contentType:'application/json'
+		}); 
+	});
+});
