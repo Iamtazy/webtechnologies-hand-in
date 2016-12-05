@@ -60,10 +60,8 @@ li a:hover {
 
 #content {
 	background-color: grey;
-	height: 78%;
-	padding-top: 25px;
-	padding-left: 25px;
-	padding-right: 25px;
+	height: 75%;
+	padding: 25px;
 	color: white;
 	text-align: justify;
 }
@@ -83,6 +81,7 @@ li a:hover {
 	background-color: #6C6B69;
 	color: black;
 	padding: 0px;
+	margin: 0px;
 	height: 100%;
 }
 
@@ -106,10 +105,39 @@ li.leftLI a:hover {
     color: black;
 }
 
-table, th, td {
-	width: 50%;
-	vertical-align: middle;
-	border: 1px solid;
+table {
+	width: 70%;
+
+	color: white;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 5px;
+	border: 2px solid;
+	background-color: #2BE41E;
+	border-color: white;
+	color: #6C6B69;
+}
+
+td {
+	padding: 5px;
+	border: 2px solid;
+	background-color: #6C6B69;
+}
+
+p.formText {
+	font-size: 22px;
+	color: white;
+}
+
+input.input {
+	border: 10px;
+	border-color: #2BE41E;
+}
+
+#ioru {
+	font-size: 28px;
 	color: white;
 }
 

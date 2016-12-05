@@ -21,6 +21,12 @@ public class IndexController {
 		ModelAndView result = new ModelAndView("authors");
 		return result;
 	}
+	
+	@RequestMapping(value={"/bookPage"})
+	public ModelAndView bookPage(){
+		ModelAndView result = new ModelAndView("books");
+		return result;
+	}
 
 	@RequestMapping("/hello")
 	public @ResponseBody String sayHello(){

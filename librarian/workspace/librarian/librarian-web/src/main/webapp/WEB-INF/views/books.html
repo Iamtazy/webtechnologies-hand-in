@@ -4,21 +4,12 @@
 <link href="css/mainStyle.css" type="text/css" rel="stylesheet"/>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/listingFunctions.js"></script>
-<script type="text/javascript" src="js/authorFunctions.js"></script>
 
 <script>
 $(document).ready(function() {
 	$("#listButton").click(function() {
-		listAuthors();
+		listBooks();
 	});
-	
-	$("#insertButton").click(function() {
-		$("#mainContent").load("content/authorForm.html");
-	});
-	
-	$("#updateButton").click(function() {
-		$("#mainContent").load("content/updateForm.html");
-	})
 });
 </script>
 
@@ -35,9 +26,7 @@ $(document).ready(function() {
 <div id="content">
 <div id="leftPanel">
 <nav><ul class="leftUL">
-  <li id="listButton" class="leftLI"><a href="#">List all authors</a></li>
-  <li id="insertButton" class="leftLI"><a href="#">Insert an author</a></li>
-  <li id="updateButton" class="leftLI"><a href="#">Update an author</a></li>
+  <li id="listButton" class="leftLI"><a href="#">List all books</a></li>
 </ul></nav></div>
 <div id="mainContent"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper urna id sem ornare, vel lobortis diam interdum. Vestibulum sed felis pulvinar, pretium lorem at, auctor ex. Proin varius diam at suscipit egestas. Vestibulum a aliquam erat. Maecenas quis tortor vel dolor venenatis blandit at nec dolor. Vivamus sit amet ante nec diam fringilla sagittis. Morbi condimentum euismod quam quis porttitor. Nam erat elit, semper a nibh venenatis, tempor volutpat magna.
 Nullam commodo, neque at faucibus auctor, nibh lorem convallis nulla, et dignissim tellus orci eget purus. Cras in semper libero. Curabitur dapibus leo sed ex dignissim sodales. Nulla ac ultricies sapien. Fusce eu malesuada massa, id semper enim. Phasellus faucibus pharetra porta. Donec mattis imperdiet consequat. Morbi sodales feugiat diam, condimentum feugiat justo viverra et. Quisque dictum dignissim scelerisque. Nulla faucibus pretium nibh sed mattis. Morbi eu ullamcorper lacus. Nunc eu odio quis dui tristique faucibus.
